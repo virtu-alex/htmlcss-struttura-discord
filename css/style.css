@@ -5,11 +5,12 @@
 }
 
 body {
-    background-color: bisque;
+    background-color: white;
 }
 
 .top-container {
     display: flex;
+    flex-shrink: 0;
     padding: 20px;
     justify-content: space-around;
     min-height: 400px;
@@ -17,16 +18,21 @@ body {
     flex-wrap: wrap;
 }
 
+
 .nav-search {
-    flex-basis: 50%;
+    flex-basis: 60%;
+    padding: 1rem;
     background-color: red;
     height: 100px;
+    border: 2px solid black;
 }
 
 .nav-list {
-    flex-basis: 15%;
+    padding: 1rem;
+    flex-basis: 20%;
     background-color: red;
     height: 100px;
+    border: 2px solid black;
 }
 
 .main-header-text {
@@ -35,10 +41,10 @@ body {
     background-color: red;
     flex-basis: 1000px;
     height: 200px;
+    border: 2px solid black;
 }
 
 .container {
-    border: 2px solid black;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -51,21 +57,21 @@ body {
 }
 
 .small-div {
+    padding: 1rem;
     background-color: red;
-    min-height: 100%;
+    min-height: 300px;
     margin: 5rem 0;
-    flex-basis: 30%;
-    border: 2px solid black;
-
+    flex-basis: 40%;
+    border: 2px solid black;   
 }
 
 .big-div {
     background-color: red;
+    padding: 1rem;
     min-height: 300px;
     flex-basis: 60%;
     margin: 5rem 0;
     border: 2px solid black;
-
 }
 
 .subtext {
@@ -76,14 +82,6 @@ body {
     flex-basis: 700px;
     border: 2px solid black;
 
-}
-
-.pre-footer {
-    justify-content: center;
-    border: 2px solid yellow;
-    margin: 0 20rem;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .row-1 {
@@ -115,58 +113,51 @@ body {
 }
 
 footer {
-    background-color: grey;
     padding: 1rem;
     justify-content: space-around;
     border: 2px solid darkgreen;
     flex-wrap: wrap;
     display: flex;
     min-height: 500px;
-    background-color: grey;
+    background-color: rgb(59, 59, 59);
+}
+
+[class*="col"],
+.discord
+{
+    border: 2px solid black;
+    background-color: red;
+
 }
 
 .column-1 {
-    background-color: red;
     width: 40%;
     min-height: 100px;
-    margin-bottom: 1rem;
-    border: 2px solid black;
     
 }
 
 .column-2 {
-    border: 2px solid black;
-    background-color: red;
     width: 15%;
     height: 200px;
 }
 
 .column-3 {
-    background-color: red;
     width: 15%;
-    border: 2px solid black;
     height: 200px;
 }
 
 .column-4 {
-    margin-bottom: 1rem;
-    background-color: red;
-    border: 2px solid black;
     width: 15%;
     height: 400px;
 }
 
 .column-5 {
-    background-color: red;
     width: 15%;
-    border: 2px solid black;
     height: 200px;
 }
 
 .discord {
-    border: 2px solid black;
-    margin: 0 auto;
-    background-color: red;
+    margin: 1rem 0 auto;
     width: 60%;
     height: 200px;
 
