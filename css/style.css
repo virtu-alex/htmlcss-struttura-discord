@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -62,7 +62,7 @@ body {
     min-height: 300px;
     margin: 5rem 0;
     flex-basis: 40%;
-    border: 2px solid black;   
+    border: 2px solid black;
 }
 
 .big-div {
@@ -123,8 +123,7 @@ footer {
 }
 
 [class*="col"],
-.discord
-{
+.discord {
     border: 2px solid black;
     background-color: red;
 
@@ -133,7 +132,7 @@ footer {
 .column-1 {
     width: 40%;
     min-height: 100px;
-    
+
 }
 
 .column-2 {
@@ -160,5 +159,4 @@ footer {
     margin: 1rem 0 auto;
     width: 60%;
     height: 200px;
-
 }
