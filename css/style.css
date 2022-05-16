@@ -4,21 +4,18 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: bisque;
 }
 
-.flexer {
-    display: flex;
-}
-
 .top-container {
-    flex-shrink: 0;
+    display: flex;
     padding: 20px;
     justify-content: space-around;
     min-height: 400px;
     background-color: aqua;
     flex-wrap: wrap;
+    border: 2px solid greenyellow;
 }
 
 .nav-search {
@@ -34,36 +31,80 @@ body{
     height: 100px;
 }
 
-.main-header-text {  
+.main-header-text {
     align-content: center;
     align-self: center;
     background-color: red;
-    width: 1000px;
+    flex-basis: 1000px;
     height: 200px;
 }
 
-.container{
+.container {
+    border: 2px solid black;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 0 20rem;
 }
 
-.left-div{
+.left-div {
     background-color: red;
-    min-height: 300px;
+    min-height: 100%;
     margin: 5rem 0;
-    width: calc(100% / 3);
+    flex-basis: calc(100% / 3);
 }
-.right-div{
+
+.right-div {
     background-color: red;
     min-height: 300px;
-    width: calc(100%/2);
+    flex-basis: calc(100% / 2);
     margin: 5rem 0;
 }
 
-.subtext{
-    margin-bottom: 5rem;
+.subtext {
+    margin: 0 auto;
+    margin-bottom: 1rem;
     background-color: red;
-    height: 100px;
+    height: 150px;
+    flex-basis: 700px;
+}
+
+.pre-footer {
+    justify-content: center;
+    border: 2px solid yellow;
+    margin: 0 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 600px;
+}
+
+.column-1 {
+    width: 80%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    background-color: red;
+    min-height: 100px;
+}
+
+.column-2 {
     width: 100%;
+    margin-bottom: 1rem;
+    background-color: red;
+    min-height: 220px;
+}
+
+.column-3 {
+    margin-bottom: 1rem;
+    background-color: red;
+    min-height: 100px;
+    width: 200px;
+}
+
+footer{
+    justify-content: center;
+    border: 2px solid darkgreen;
+    flex-wrap: wrap;
+    display: flex;
+    min-height: 500px;
+    background-color: grey;
 }
