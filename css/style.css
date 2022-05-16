@@ -15,7 +15,6 @@ body {
     min-height: 400px;
     background-color: aqua;
     flex-wrap: wrap;
-    border: 2px solid greenyellow;
 }
 
 .nav-search {
@@ -25,7 +24,6 @@ body {
 }
 
 .nav-list {
-    padding: 20px;
     flex-basis: 15%;
     background-color: red;
     height: 100px;
@@ -44,21 +42,30 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 0 20rem;
+    width: 1400px;
+    margin: 0 auto;
 }
 
-.left-div {
+.grey-bck {
+    background-color: grey;
+}
+
+.small-div {
     background-color: red;
     min-height: 100%;
     margin: 5rem 0;
-    flex-basis: calc(100% / 3);
+    flex-basis: 30%;
+    border: 2px solid black;
+
 }
 
-.right-div {
+.big-div {
     background-color: red;
     min-height: 300px;
-    flex-basis: calc(100% / 2);
+    flex-basis: 60%;
     margin: 5rem 0;
+    border: 2px solid black;
+
 }
 
 .subtext {
@@ -67,6 +74,8 @@ body {
     background-color: red;
     height: 150px;
     flex-basis: 700px;
+    border: 2px solid black;
+
 }
 
 .pre-footer {
@@ -75,36 +84,90 @@ body {
     margin: 0 20rem;
     display: flex;
     flex-wrap: wrap;
-    min-height: 600px;
 }
 
-.column-1 {
+.row-1 {
     width: 80%;
     margin-bottom: 1rem;
     margin-top: 1rem;
     background-color: red;
     min-height: 100px;
+    border: 2px solid black;
+
 }
 
-.column-2 {
+.row-2 {
     width: 100%;
     margin-bottom: 1rem;
     background-color: red;
     min-height: 220px;
+    border: 2px solid black;
+
 }
 
-.column-3 {
+.row-3 {
     margin-bottom: 1rem;
     background-color: red;
     min-height: 100px;
     width: 200px;
+    border: 2px solid black;
+
 }
 
-footer{
-    justify-content: center;
+footer {
+    background-color: grey;
+    padding: 1rem;
+    justify-content: space-around;
     border: 2px solid darkgreen;
     flex-wrap: wrap;
     display: flex;
     min-height: 500px;
     background-color: grey;
+}
+
+.column-1 {
+    background-color: red;
+    width: 40%;
+    min-height: 100px;
+    margin-bottom: 1rem;
+    border: 2px solid black;
+    
+}
+
+.column-2 {
+    border: 2px solid black;
+    background-color: red;
+    width: 15%;
+    height: 200px;
+}
+
+.column-3 {
+    background-color: red;
+    width: 15%;
+    border: 2px solid black;
+    height: 200px;
+}
+
+.column-4 {
+    margin-bottom: 1rem;
+    background-color: red;
+    border: 2px solid black;
+    width: 15%;
+    height: 400px;
+}
+
+.column-5 {
+    background-color: red;
+    width: 15%;
+    border: 2px solid black;
+    height: 200px;
+}
+
+.discord {
+    border: 2px solid black;
+    margin: 0 auto;
+    background-color: red;
+    width: 60%;
+    height: 200px;
+
 }
